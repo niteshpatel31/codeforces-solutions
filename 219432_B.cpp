@@ -2,11 +2,16 @@
 
 int main(int argc, char const *argv[])
 {
-    long long int num;
+    unsigned short num;
     std::cin >> num;
-    for (long long int i = 1; i <= num; i++)
+    if (num == 1 || num == 0)
+
+        std::cout << "-1\n";
+
+    for (short i = 1; i <= num; i++)
     {
-        std::cout << i << "\n";
+        if (i % 2 == 0)
+            std::cout << i << "\n";
     }
     exit(EXIT_SUCCESS);
 }

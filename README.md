@@ -5,3 +5,4 @@
 ##  **IN LINUX :** crtl+shift+b with tasks.json
 
 ### do 219432_Q.cpp Digits more other ways
+### do 219432_R.cpp Digits more other ways

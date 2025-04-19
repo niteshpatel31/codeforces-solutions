@@ -1,21 +1,51 @@
-#include <iostream>
+// #include <iostream>
 
-int main(int argc, char const *argv[])
+// void print_palindrome(unsigned int num)
+// {
+//     unsigned int temp{10}, buffer;
+//     while (num % (temp / 10) != num)
+//     {
+//         buffer = num % temp;
+//         if (buffer == 0)
+//             std::cout << "0B";
+//         std::cout << buffer / (temp / 10) << " ";
+//         temp *= 10;
+//     }
+// }
+
+// int main(int argc, char const *argv[])
+// {
+//     unsigned short test;
+//     std::cin >> test;
+
+//     while (test--)
+//     {
+//         unsigned int num;
+//         std::cin >> num;
+//         print_digits(num);
+//         std::cout << "\n";
+//     }
+
+//     return 0;
+// }
+#include <stdio.h>
+int main()
 {
-    unsigned short test{};
-    std::cin >> test;
-    std::string arr[test];
-    for (int i = 0; i < test; i++)
-        std::cin >> arr[i];
-    for (int i = 0; i < test; i++)
+    int t;
+    scanf("%d", &t);
+
+    while (t--)
     {
-        for (size_t i = {i}; i < test; i++)
+        long long int n;
+        scanf("%lld", &n);
+
+        do
         {
-            /* code */
-            std::cout << "inner  : " << i << std::endl;
-        }
-        std::cout << "outer  : " << i << std::endl;
+            printf("%d ", n % 10);
+            n /= 10;
+        } while (n != 0);
+        printf("\n");
     }
 
-    exit(EXIT_SUCCESS);
+    return 0;
 }

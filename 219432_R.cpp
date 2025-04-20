@@ -2,14 +2,13 @@
 
 int main(int argc, char const *argv[])
 {
-    int test{3};
     short n, m;
-    while (test--)
+    while (true)
     {
         int ans{0};
         std::cin >> n >> m;
         if (n <= 0 || m <= 0)
-            continue;
+            exit(EXIT_SUCCESS);
         if (n > m)
         {
             auto buffer = n;

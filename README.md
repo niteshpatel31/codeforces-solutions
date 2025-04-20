@@ -5,5 +5,5 @@
 ##  **IN LINUX :** crtl+shift+b with tasks.json
 
 ### do 219432_Q.cpp Digits more other ways
-### do 219432_R.cpp Digits more other ways
-### study diamond problems and optimize it
+### study diamond problems and optimize it  
+### complete 219432_X.cpp

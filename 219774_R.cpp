@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
     }
 
     // Output result
-    std::cout << (is_permutation ? "yes" : "no") << std::endl;
+    std::cout << (is_permutation ? "yes" : "no");
 
     return 0;
 }

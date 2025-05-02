@@ -1,21 +1,5 @@
-sum : 1
-sum : 2
-sum : 3
-sum : 4
-sum : 5
-sum : 6
-sum : 7
-sum : 8
-sum : 9
-sum : 1
-sum : 2
-sum : 3
-sum : 4
-sum : 5
-sum : 6
-sum : 7
-sum : 8
-sum : 9
-sum : 10
-sum : 2
-84
+power : 25	ans : 25
+power : 125	ans : 25
+power : 625	ans : 650
+power : 3125	ans : 650
+650

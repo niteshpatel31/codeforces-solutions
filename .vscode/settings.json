@@ -94,7 +94,9 @@
         "valarray": "cpp",
         "variant": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "flat_map": "cpp",
+        "flat_set": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

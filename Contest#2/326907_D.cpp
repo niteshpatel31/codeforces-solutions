@@ -1,6 +1,17 @@
 #include <iostream>
 #define ull unsigned long long
 
+void _min(ull &a, ull &b)
+{
+    ull buffer;
+    if (a > b)
+    {
+        buffer = a;
+        a = b;
+        b = buffer;
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     ull test, start, end, sum{0};
@@ -8,7 +19,8 @@ int main(int argc, char const *argv[])
     while (test--)
     {
         std::cin >> start >> end;
-        std::cout << ((end - start + 1) * (start + end) / 2) << "\n";
+        _min(start, end);
+        std::cout << std::fixed << ((end - start + 1) * (start + end) / 2) << "\n";
     }
 
     exit(EXIT_SUCCESS);

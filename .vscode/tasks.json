@@ -17,7 +17,7 @@
         {
             "label": "compile and run",
             "type": "shell",
-            "command": "g++ ${file} -std=c++17 && ./a.out <input > output",
+            "command": "g++ ${file} -g -std=c++17 && ./a.out <input > output",
             "group": {
                 "kind": "build",
                 "isDefault": true

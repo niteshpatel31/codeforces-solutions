@@ -55,8 +55,6 @@ typedef long long ll;
 //     cerr << arg << ' ';
 //     faltu(rest...);
 // }
-
-ll gcd(ll a, ll b) { return __gcd(a, b); }
 ll lcm(ll a, ll b) { return a * (b / gcd(a, b)); }
 
 void joy()
@@ -104,6 +102,5 @@ int main()
     {
         joy();
     }
-
     return 0;
 }

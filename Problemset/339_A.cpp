@@ -1,24 +1,40 @@
 #include <iostream>
 
 #define ull unsigned long long
-#define ll long long
+using ll = long long;
 #define endl "\n"
+
+void _swap(char &a, char &b)
+{
+    ll buffer = a;
+    a = b;
+    b = buffer;
+}
+
+ll _min(ll a, ll b)
+{
+    if (a < b)
+        return a;
+    return b;
+}
+
 int main(int argc, char const *argv[])
 {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
-    char c;
     std::string str;
-    ull sum{0};
     std::cin >> str;
-    for (ull i = 0; i < str.size(); i++)
+    for (int i = 0; i < str.size(); i += 2)
     {
-        c = str[i];
-        if (c != '+')
+        for (int j = i + 2; j < str.size(); j += 2)
         {
-            sum += (ull)c - 48;
+
+            if (str[i] > _min(str[i], str[j]))
+            {
+                _swap(str[i], str[j]);
+            }
         }
     }
-    std::cout << sum;
+    std::cout << str;
     exit(EXIT_SUCCESS);
 }

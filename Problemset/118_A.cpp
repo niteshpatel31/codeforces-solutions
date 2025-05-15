@@ -13,13 +13,8 @@ int main(int argc, char const *argv[])
     {
         if (str[i] >= 65 && str[i] <= 90)
             str[i] += 32;
-        if (str[i] == 97 || str[i] == 121 || str[i] == 101 || str[i] == 105 || str[i] == 111 || str[i] == 117)
-        {
-        }
-        else
-        {
+        if (str[i] != 97 && str[i] != 121 && str[i] != 101 && str[i] != 105 && str[i] != 111 && str[i] != 117)
             std::cout << '.' << str[i];
-        }
     }
     exit(EXIT_SUCCESS);
 }

@@ -7,3 +7,4 @@
 ### do 219432_Q.cpp Digits more other ways
 ### study diamond problems and optimize it  
 ### complete 219432_X.cpp
+### reattempted with better solution for Problemset/996_A.cpp("Hit the Lottery)

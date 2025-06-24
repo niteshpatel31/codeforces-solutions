@@ -6,16 +6,6 @@
 #define ll long long
 #define endl "\n"
 
-void print_arr(std::vector<ull> a, ull size)
-{
-
-    for (int i = 0; i < size; i++)
-    {
-        std::cout << a[i] << " ";
-    }
-    std::cout << endl;
-}
-
 int main(int argc, char const *argv[])
 {
     std::ios::sync_with_stdio(false);

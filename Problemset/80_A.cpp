@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     {
         for (int i = 0; i < 14; i++)
         {
-            if (x <= arr[i]  && y == arr[i + 1])
+            if (x < arr[i + 1] && x >= arr && y == arr[i + 1])
             {
                 std::cout << "YES";
                 exit(EXIT_SUCCESS);

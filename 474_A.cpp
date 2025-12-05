@@ -19,6 +19,5 @@ int main(int argc, char const *argv[]) {
     else
       std::cout << (layout[layout.find(c) - 1]);
   }
-
   exit(EXIT_SUCCESS);
 }

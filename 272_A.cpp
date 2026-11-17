@@ -1,23 +1,27 @@
+
 #include <bits/stdc++.h>
-#include <cstdlib>
 
-#define ull unsigned long long
-#define uint unsigned int
-#define ll long long
-#define endl '\n'
+#define YES "YES"
+#define NO "NO"
+#define END '\n'
+using ll = long long;
+using ull = unsigned long long;
+using namespace std;
+
 int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-
-  ll test{}, num{}, ans{};
-  std::cin >> test;
-  while (test--) {
-    std::cin >> num;
-    ans += (ans % 2==0) ? 2 : 3;
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  int n, f, tf{};
+  std::cin >> n;
+  for (int i{}; i < n; ++i) {
+    cin >> f;
+    tf += f;
   }
-  if (ans > 3)
-    ans = 3;
-  std::cout << ans << endl;
+  f = 0;
+  ++n;
+  for (int i{1}; i <= 5; ++i)
+    f += (++tf % n == 1) ? 0 : 1;
+  cout << f;
 
   return EXIT_SUCCESS;
 }
